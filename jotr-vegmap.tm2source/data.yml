@@ -1,0 +1,74 @@
+_prefs: 
+  disabled: []
+  inspector: false
+  mapid: ''
+  rev: ''
+  saveCenter: false
+attribution: National Park Service
+center: 
+  - -115.9346
+  - 33.9066
+  - 11
+description: Joshua Tree National Park Vegetation Map
+Layer: 
+  - id: vegetation
+    Datasource: 
+      file: /Users/rhodge/Documents/jotr_vegmap.sqlite
+      key_field: ''
+      table: (SELECT * FROM jotr_vegmap) AS data
+      type: sqlite
+    description: joshua Tree National Park Vegetation Map
+    fields: 
+      acres: Number
+      alliance_code: String
+      alliance_common: String
+      alliance_scientific: String
+      anderson_l1: Number
+      anderson_l1_name: String
+      anderson_l2: String
+      anderson_l2_name: String
+      association_cname: String
+      association_sname: String
+      cegl_code: String
+      class: String
+      comments: String
+      cover_cd: String
+      cover_pattern: String
+      density_cd: String
+      density_class: String
+      division: String
+      formation: String
+      fuels_type: String
+      fuels_verification: String
+      groups: String
+      groups_key: String
+      hectares: Number
+      height_cd: String
+      height_class: String
+      macrogroup: String
+      macrogroup_key: String
+      mapclass_pdf: String
+      mapclass_pdf_path: String
+      mapinfo_objectid: Number
+      mapinfo_poly_id: Number
+      mapunit_id: String
+      mapunit_name: String
+      mapunit_name_1: String
+      nvcs2_mapunitid: String
+      nvcs2_objectid: Number
+      OGC_FID: Number
+      parkspecials: String
+      poly_id: Number
+      shape_area: Number
+      shape_length: Number
+      subclass: String
+      user_accuracy: String
+      vegmapinfo_mapunit_id: String
+      x_centroid: Number
+      y_centroid: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
+maxzoom: 16
+minzoom: 11
+name: jotr-vegmap

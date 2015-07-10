@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+
+<Parameters>
+  <Parameter name="attribution"><![CDATA[National Park Service]]></Parameter>
+  <Parameter name="center">-115.9346,33.9066,11</Parameter>
+  <Parameter name="description"><![CDATA[Joshua Tree National Park Vegetation Map]]></Parameter>
+  <Parameter name="format">pbf</Parameter>
+  <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"vegetation","description":"joshua Tree National Park Vegetation Map","fields":{"OGC_FID":"Number","poly_id":"Number","mapunit_id":"String","mapunit_name":"String","x_centroid":"Number","y_centroid":"Number","acres":"Number","hectares":"Number","nvcs2_objectid":"Number","nvcs2_mapunitid":"String","class":"String","subclass":"String","formation":"String","division":"String","macrogroup_key":"String","macrogroup":"String","groups_key":"String","groups":"String","alliance_code":"String","alliance_common":"String","alliance_scientific":"String","cegl_code":"String","association_cname":"String","association_sname":"String","mapinfo_objectid":"Number","mapinfo_poly_id":"Number","vegmapinfo_mapunit_id":"String","mapunit_name_1":"String","parkspecials":"String","cover_cd":"String","cover_pattern":"String","density_cd":"String","density_class":"String","height_cd":"String","height_class":"String","fuels_type":"String","fuels_verification":"String","anderson_l1":"Number","anderson_l1_name":"String","anderson_l2":"String","anderson_l2_name":"String","user_accuracy":"String","comments":"String","mapclass_pdf":"String","mapclass_pdf_path":"String","shape_length":"Number","shape_area":"Number"}}]}]]></Parameter>
+  <Parameter name="maxzoom">16</Parameter>
+  <Parameter name="minzoom">11</Parameter>
+  <Parameter name="name"><![CDATA[jotr-vegmap]]></Parameter>
+</Parameters>
+
+
+<Layer name="vegetation"
+  buffer-size="8"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/Users/rhodge/Documents/jotr_vegmap.sqlite]]></Parameter>
+       <Parameter name="key_field"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[(SELECT * FROM jotr_vegmap) AS data]]></Parameter>
+       <Parameter name="type"><![CDATA[sqlite]]></Parameter>
+    </Datasource>
+  </Layer>
+
+</Map>
