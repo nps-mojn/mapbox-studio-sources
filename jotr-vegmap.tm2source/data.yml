@@ -13,11 +13,11 @@ description: Joshua Tree National Park Vegetation Map
 Layer: 
   - id: vegetation
     Datasource: 
-      file: /Users/rhodge/Documents/jotr_vegmap.sqlite
+      file: data/jotr_vegmap.sqlite
       key_field: ''
       table: (SELECT * FROM jotr_vegmap) AS data
       type: sqlite
-    description: joshua Tree National Park Vegetation Map
+    description: Joshua Tree National Park Vegetation Map
     fields: 
       acres: Number
       alliance_code: String
